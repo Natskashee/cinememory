@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Cabin&display=swap");
+@import url(https://db.onlinewebfonts.com/c/1b3f9cb78376a36884f3908f37a42c91?family=Tiempos+Text+Regular);
+
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("/fonts/GraphikLCG-Regular.woff2") format("woff2"),
+    url("/fonts/GraphikLCG-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Signatra DEMO";
+  src: url("/fonts/SignatraDEMO.woff2") format("woff2"),
+    url("/fonts/SignatraDEMO.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Candle Mustard";
+  src: url("/fonts/CandleMustard.woff2") format("woff2"),
+    url("/fonts/CandleMustard.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url("/fonts/Metropolis-Regular.woff2") format("woff2"),
+    url("/fonts/Metropolis-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Metropolis Bold";
+  src: url("/fonts/Metropolis-Bold.woff2") format("woff2"),
+    url("/fonts/Metropolis-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mona Sans Bold";
+  src: url("/fonts/Mona Sans/WOFF 2/Mona-Sans-SemiBold.woff2") format("woff2"),
+    url("/fonts/Mona Sans/WOFF/Mona-Sans-SemiBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik bold";
+  src: url("/fonts/Graphik-Font-Family/GraphikSemibold.otf");
+}
+
+@font-face {
+  font-family: "Graphik Regular";
+  src: url("/fonts/Graphik-Font-Family/GraphikRegular.otf");
+}
+
+
+.G-bold {
+  font-family: "Tiempos Text Regular";
+  font-weight: bold;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  font-family: "Graphik Regular";
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f2f2f2;
+}
+
+.font-metro {
+  font-family: "Metropolis Bold";
+  font-weight: bold;
+}
+.App {
+  text-align: center;
+}
+
+.head-text {
+  font-family: "Mona Sans Bold";
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation CSS pour les cartes */
+.card-fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.card-fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.card-fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.custom-input::placeholder{
+  color: black;
+}
